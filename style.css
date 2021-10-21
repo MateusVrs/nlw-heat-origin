@@ -2,73 +2,88 @@
 
 * {
     margin: 0;
-    padding: 0;
 }
 
 :root {
     --main-font: 'Roboto', sans-serif;
-    --dark-green: hsl(197, 100%, 11%);
-    --light-green: hsl(180, 70%, 27%);
-    --light-yellow: hsl(39, 52%, 78%);
+    --title-gray: hsl(240, 9%, 89%);
+    --social-gray: hsl(240, 7%, 78%);
+    --text-grey: hsl(0, 0%, 77%);
 }
 
 html, body {
     height: 100%;
-    background-color: var(--light-yellow);
     font-family: var(--main-font);
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background: url(images/background.svg);
+    width: 375px;
+    height: 812px;
+
+}
+
+.container {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 48% 100%, 0 75%, 0 25%);;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--title-gray);
+}
+
+.github-link {
+    margin-top: 0.25rem;
 }
 
 a {
-    color: var(--dark-green);
+    color: var(--social-gray);
     text-decoration: none;
-}
-
-.profile-container {
-    background-color: var(--light-green);
-    width: 85%;
-    max-width: 900px;
-    border-radius: 20px;
-}
-
-.intro-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    gap: 0.75rem;
 }
 
-.intro-container h1 {
-    margin: 10px;
+
+p {
+    color: var(--text-grey);
+    margin-top: 2rem;
 }
 
-.intro-container img {
-    border-radius: 50%;
-    width: 220px;
-}
-
-.info-container {
-    text-align: center;
-    width: 50%;
-    gap: 10px;
-    margin: 20px auto;
+ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.social-container {
-    display: flex;
-    gap: 10px;
-}
-
-.social-container img {
-    width: 35px;
+    justify-content: center;
+    gap: 0.5rem;
 }
