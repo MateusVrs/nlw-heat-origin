@@ -73,7 +73,7 @@ a {
 }
 
 
-p {
+#userBio {
     color: var(--text-grey);
     margin-top: 2rem;
 }
