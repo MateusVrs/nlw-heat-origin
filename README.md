@@ -10,6 +10,9 @@
 
 ### Aula 03
 - Aprendizado básico sobre JS e implemantação de um desse para motivicação do HTML pela DOM
+  
+### Aula 04
+- Utilização do JS para acessar a API do GitHub e automatizar minimamente a troca das informações do usuário
 
 ## Layout
 <div align="center">
