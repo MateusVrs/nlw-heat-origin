@@ -14,6 +14,9 @@
 ### Aula 04
 - Utilização do JS para acessar a API do GitHub e automatizar minimamente a troca das informações do usuário
 
+### Aula 05
+- Ajustes finais e desafio para fazer o desktop view
+
 ## Layout
 <div align="center">
     <img src="https://raw.githubusercontent.com/MateusVrs/nlw-heat-origin/nlw-heat-origin/images/nlw-heat-layout.png">
