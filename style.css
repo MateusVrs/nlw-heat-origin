@@ -9,6 +9,7 @@
     --title-gray: hsl(240, 9%, 89%);
     --social-gray: hsl(240, 7%, 78%);
     --text-grey: hsl(0, 0%, 77%);
+    --background-color: hsl(240, 5%, 7%);
 }
 
 html, body {
@@ -22,13 +23,14 @@ body {
 }
 
 main {
-    background: url(images/background.svg);
-    width: 375px;
-    height: 812px;
-
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
 }
 
 .container {
+    position: relative;
     width: 250px;
     margin: 0 auto;
     text-align: center;
@@ -86,4 +88,37 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+@media (min-width: 650px) {
+    body {
+        position: relative;
+        background-color: var(--background-color);
+    }
+
+    main {
+        position: absolute;
+        background: url(images/desktop-background.svg) no-repeat center top;
+        width: 100%;
+        top: 0;
+    }
+
+    .desktop-degrade-pink, .desktop-degrade-yellow {
+        position: absolute;
+        z-index: -1;
+        top: -55%;
+        height: 100%;
+        width: 65%;
+    }
+
+    .desktop-degrade-pink {
+        left: 5%;
+        background: radial-gradient(50% 50% at 50% 50%, #ff3d6e 0%, #53537900 75%);
+    }
+
+    .desktop-degrade-yellow {
+        right: 5%;
+        background: radial-gradient(50% 50% at 50% 50%, #ffc524 0%, #11111300 75%);
+    }
+    
 }
